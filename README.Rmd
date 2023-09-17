@@ -1,0 +1,42 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# libminer
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of libminer is to help you understand your libraries better,
+and to learn how to write packages.
+
+## Installation
+
+You can install the development version of libminer from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("cdobbelaere/libminer")
+```
+
+## Example
+```{r example 1}
+library(libminer)
+lib_summary()
+```
+
+## You can also calculate library sizes.
+```{r example 2}
+lib_summary(sizes = TRUE)
+```
